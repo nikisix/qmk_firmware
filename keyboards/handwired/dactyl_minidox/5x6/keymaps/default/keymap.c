@@ -9,7 +9,7 @@
 
 // SC_LSPO - Left Shift when held, ( when tapped
 // SC_RSPC - Right Shift when held, ) when tapped
-// KC_BSLS - backslash / pipe
+// KC_BSLS - backslash,pipe
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT_5x6(
         KC_GRV , KC_1  , KC_2  , KC_3  , KC_4  , KC_5  ,                   KC_6  , KC_7  , KC_8  , KC_9  , KC_0  ,KC_MINS,
@@ -18,30 +18,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         SC_LSPO, KC_Z  , KC_X  , KC_C  , KC_V  , KC_B  ,                   KC_N  , KC_M  ,KC_COMM,KC_DOT ,KC_SLSH,SC_RSPC,
                         KC_LEFT,KC_RIGHT,                                                  KC_DOWN, KC_UP,
                                         _______,_______,                   _______, _______,
-                                        RAISE  ,LOWER  ,                   CTL_T(KC_RALT) , KC_ENT,
+                                         RAISE , LOWER ,                   RCTL_T(KC_RGUI) , KC_ENT,
                                         _______,KC_BSPC,                   KC_SPC , _______
     ),
 
     [_RAISE] = LAYOUT_5x6(
         KC_F12 , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 ,                   KC_F6  , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,
-        _______,_______,_______,_______,_______,_______,                   _______,KC_LBRC,KC_RBRC,KC_LPRN,KC_RPRN,KC_MUTE,
+        _______,_______,_______,_______,_______,_______,                   KC_LBRC,KC_RBRC,KC_LPRN,KC_RPRN,_______,KC_BSLS,
         KC_ACL0,KC_ACL1,KC_ACL2,KC_BTN1,KC_BTN2,_______,                   KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,_______,KC_VOLU,
         _______,KC_HOME,KC_PGUP,KC_PGDN,KC_END ,_______,                   KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,_______,KC_VOLD,
                         KC_WH_L,KC_WH_R,                                                   KC_WH_D,KC_WH_U,
                                         _______,_______,                   _______,_______,
-                                        _______,_______,                   KC_LGUI,KC_BSLS,
-                                        _______,KC_DEL ,                   KC_MINUS,_______
+                                        _______,_______,                   _______,_______,
+                                        _______,KC_DEL ,                   _______,_______
     ),
 
     [_LOWER] = LAYOUT_5x6(
-                                                                                
+
         KC_TILD,KC_EXLM, KC_AT ,KC_HASH,KC_DLR ,KC_PERC,                   KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,KC_DEL,
-        _______,_______,_______,_______,_______,_______,                   _______, KC_P7 , KC_P8 , KC_P9 ,_______,KC_PLUS,
-        _______,_______,_______,_______,_______,_______,                   _______, KC_P4 , KC_P5 , KC_P6 ,KC_MINS,KC_PIPE,
-        _______,_______,_______,_______,_______,_______,                   _______, KC_P1 , KC_P2 , KC_P3 ,KC_EQL ,KC_UNDS,
-                        _______,_______,                                                   _______, KC_P0,
+        _______,_______,_______,_______,_______,_______,                   KC_LBRC, KC_7 , KC_8 , KC_9 ,KC_EQL ,KC_PLUS,
+        _______,_______,_______,_______,_______,_______,                   KC_RBRC, KC_4 , KC_5 , KC_6 ,KC_MINS,KC_SLSH,
+        _______,_______,_______,_______,_______,_______,                   KC_PDOT, KC_1 , KC_2 , KC_3 ,KC_PAST,KC_COMM,
+                        _______,_______,                                                   KC_PLUS, KC_0,
                                         _______,_______,                   _______,_______,
-                                        _______,KC_PSCR,                   KC_LGUI,KC_RCTL,
-                                        _______,_______,                   KC_RALT,_______
+                                        _______,KC_PSCR,                   KC_RCTL,KC_LGUI,
+                                        _______,_______,                   KC_0   ,_______
     )
 };
