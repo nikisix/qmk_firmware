@@ -24,7 +24,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [_RAISE] = LAYOUT_5x6(
         KC_F12 , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 ,                   KC_F6  , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,
-        _______,_______,_______,_______,_______,_______,                   KC_LBRC,KC_RBRC,KC_LPRN,KC_RPRN,_______,KC_BSLS,
+        _______,_______,_______,_______,_______,_______,                   _______,KC_LBRC,KC_RBRC,KC_LPRN,KC_RPRN,KC_BSLS,
         KC_ACL0,KC_ACL1,KC_ACL2,KC_BTN1,KC_BTN2,_______,                   KC_MS_L,KC_MS_D,KC_MS_U,KC_MS_R,_______,KC_VOLU,
         _______,KC_HOME,KC_PGUP,KC_PGDN,KC_END ,_______,                   KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,_______,KC_VOLD,
                         KC_WH_L,KC_WH_R,                                                   KC_WH_D,KC_WH_U,
@@ -36,12 +36,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_LOWER] = LAYOUT_5x6(
 
         KC_TILD,KC_EXLM, KC_AT ,KC_HASH,KC_DLR ,KC_PERC,                   KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,KC_DEL,
-        _______,_______,_______,_______,_______,_______,                   KC_LBRC, KC_7 , KC_8 , KC_9 ,KC_EQL ,KC_PLUS,
+        _______,_______,_______,_______,_______,_______,                   KC_LBRC, KC_7 , KC_8 , KC_9 ,KC_EQL ,KC_PAST,
         _______,_______,_______,_______,_______,_______,                   KC_RBRC, KC_4 , KC_5 , KC_6 ,KC_MINS,KC_SLSH,
-        _______,_______,_______,_______,_______,_______,                   KC_PDOT, KC_1 , KC_2 , KC_3 ,KC_PAST,KC_COMM,
+        _______,_______,_______,_______,_______,_______,                   KC_PDOT, KC_1 , KC_2 , KC_3 ,KC_COMM,KC_PDOT,
                         _______,_______,                                                   KC_PLUS, KC_0,
                                         _______,_______,                   _______,_______,
-                                        _______,KC_PSCR,                   KC_RCTL,KC_LGUI,
+                                        _______,KC_PSCR,                   KC_RALT,_______,
                                         _______,_______,                   KC_0   ,_______
     )
 };
